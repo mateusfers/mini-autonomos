@@ -1,4 +1,4 @@
-Estudo de autônomos
+\# MiniAutônomos: Do Grid à Decisão Autônoma
 
 
 
@@ -6,33 +6,59 @@ Mini-projeto de 4 dias para estudo de agentes autônomos, aprendizado por refor�
 
 
 
-Estrutura do Projeto
+\## Estrutura do Projeto
+
+
+
+```
 
 mini-autonomos/
 
 ├── dia1/
 
-│   └── dia1\_grid.py       # Agente com regra determinística (Pygame)
+│   └── dia1\_grid.py              # Agente com regra determinística (Pygame)
 
-├── dia2/                  # Aprendizado por reforço (Q-learning)
+├── dia2/
 
-├── dia3/                  # Percepção com visão computacional (OpenCV)
+│   └── dia2\_qlearning.py         # Aprendizado por reforço (Q-learning)
 
-├── dia4/                  # Integração: percepção + decisão
+├── dia3/                         # Percepção com visão computacional (OpenCV)
+
+├── dia4/                         # Integração: percepção + decisão
 
 ├── requirements.txt
 
 └── README.md
 
-Como Rodar
+```
 
-Pré-requisitos
 
-Python 3.12+
 
-Pygame
+\## Como Rodar
 
-Instalação
+
+
+\### Pré-requisitos
+
+
+
+\- Python 3.12+
+
+\- Pygame
+
+\- Gymnasium
+
+\- OpenCV
+
+\- NumPy
+
+
+
+\### Instalação
+
+
+
+```bash
 
 git clone https://github.com/mateusfers/mini-autonomos.git
 
@@ -40,57 +66,101 @@ cd mini-autonomos
 
 python -m venv venv
 
-venv\\Scripts\\activate
+source venv/bin/activate  # No Windows: venv\\Scripts\\activate
 
 pip install -r requirements.txt
 
-Execução
+```
 
 
 
-Para executar a primeira etapa:
+\### Executar Cada Dia
 
 
+
+Dia 1: Agente com Regra Determinística
+
+
+
+```bash
 
 python dia1/dia1\_grid.py
 
-
-
-As demais etapas serão executadas a partir dos respectivos diretórios e arquivos conforme forem desenvolvidas.
-
-
-
-Objetivo
+```
 
 
 
-O projeto é dividido em quatro etapas:
+Dia 2: Aprendizado por Reforço (Q-learning)
 
 
 
-Regras determinísticas
+```bash
 
-Criar um agente que toma decisões seguindo regras fixas em um ambiente em grid.
+python dia2/dia2\_qlearning.py
 
-Aprendizado por reforço
+```
 
-Utilizar Q-learning para que o agente aprenda quais ações tomar por meio de tentativa e erro.
 
-Percepção artificial
 
-Utilizar OpenCV para permitir que o agente identifique informações do ambiente, como obstáculos.
+Dia 3: Percepção com Visão Computacional
 
-Integração
 
-Juntar percepção e tomada de decisão, criando um agente capaz de observar o ambiente e escolher ações de forma autônoma.
 
-Tecnologias
+```bash
 
-Python 3.12
+python dia3/dia3\_opencv.py
 
-Pygame
+```
 
-Gymnasium
 
-OpenCV
+
+Dia 4: Integração - Percepção e Decisão
+
+
+
+```bash
+
+python dia4/dia4\_integracao.py
+
+```
+
+
+
+\## Objetivo
+
+
+
+1\. Regras determinísticas - agente segue uma regra fixa
+
+2\. Aprendizado por reforço - agente aprende por tentativa e erro
+
+3\. Percepção artificial - agente enxerga obstáculos
+
+4\. Integração - percepção e decisão trabalhando juntas
+
+
+
+\## Tecnologias
+
+
+
+\- Python 3.12
+
+\- Pygame (visualização)
+
+\- Gymnasium (aprendizado por reforço)
+
+\- OpenCV (visão computacional)
+
+\- NumPy
+
+
+
+\## Status
+
+
+
+Em desenvolvimento
+
+
 

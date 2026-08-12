@@ -1,0 +1,5 @@
+venv_pygame/ 
+venv_mini/ 
+__pycache__/ 
+*.pyc 
+*.whl 
